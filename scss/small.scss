@@ -1,0 +1,40 @@
+@media #{$small-up} {
+	.header {
+		h1 {
+			font-size: 1.5em ;
+		}
+
+		h1:after {
+			display: none;
+		}
+
+		h1:before {
+			display: none;
+		}
+
+		.caption {
+			font-size: 0.8em ;
+		}
+	}
+
+	.experience article {
+		position: relative;
+		.year {
+			margin: 10px 0 0 0;
+			font-size: 14px;;
+			display: block;
+			text-align: center;
+		}
+	}
+
+	.workstyle {
+		display: none;
+	}
+
+	h4 {
+		color: #464646;
+		font-size: 1.5em;
+		font-weight: bold;
+		text-align: center;
+	}
+}

@@ -1,0 +1,98 @@
+@import "settings";
+@charset "UTF-8";
+@import
+	"normalize",
+	"foundation/components/type",
+	"foundation/components/grid",
+	"foundation/components/visibility"
+;
+@import "small";
+@import "medium";
+@import "large";
+
+body {
+	background: #f4f4f4;
+}
+
+.content {
+	box-shadow: 1px 1px 2px 0 #d0d0d0;
+	margin: 10px 0;
+	padding: 20px 15px;
+	background: white;
+}
+
+.topbar {
+	line-height: 50px;
+	background: black;
+	color: white;
+}
+
+.header {
+	text-align: center;
+	$color: #464646;
+
+	h1 {
+		color: $color;
+		font-family: 'Arvo', serif;
+		background: white;
+		font-weight: bold;
+		padding: 0 2px;
+		margin: 0;
+		text-transform: uppercase;
+
+	}
+
+	@mixin header-lines() {
+		color: #d4d4d4;
+		content: " ";
+		height: 1px;
+		border-top: 1px solid black;
+		display: block;
+		top: 25px;
+		position: absolute;
+	}
+
+	h1:after {
+		@include header-lines();
+		right: 0;
+	}
+
+	h1:before {
+		@include header-lines();
+		left: 0;
+	}
+
+	.caption {
+		@media #{$small-up} {
+			font-size: 0.8em ;
+		}
+		@media #{$medium-up} {
+			font-size: 1.1em ;
+		}
+		@media #{$large-up} {
+			font-size: 1.1em ;
+		}
+		color: $color;
+		font-family: 'Arvo', serif;
+		margin-top: -6px;
+		text-transform: uppercase;
+	}
+
+	.teaser {
+		color: $color;
+		font-style: italic;
+	}
+}
+
+h5 {
+	color: #464646;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.company {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 12px;
+	font-style: italic;
+}

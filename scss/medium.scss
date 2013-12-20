@@ -1,0 +1,45 @@
+@media #{$medium-up} {
+	.header {
+		h1 {
+			font-size: 2em ;
+		}
+
+		h1:after {
+			width: 34%;
+		}
+
+		h1:before {
+			width: 34%;
+		}
+
+		.caption {
+			font-size: 1.1em ;
+		}
+	}
+
+	.experience article {
+		.year {
+			margin: 0;
+			text-align: right;
+			font-size: 1.4em;
+			color: #008cba;
+			font-weight: bold;
+
+			span {
+				margin-top: -10px;
+				font-size: 0.8em;
+				display: block;
+				color: grey;
+				font-weight: normal;
+			}
+		}
+	}
+
+	h4 {
+		text-align: left;
+	}
+
+	.workstyle {
+		display: block;
+	}
+}
